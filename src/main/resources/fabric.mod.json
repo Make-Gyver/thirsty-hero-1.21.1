@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "thirstyhero",
+	"version": "${version}",
+	"name": "Thirsty Hero",
+	"description": "Players will geh´t thirsty and have to dring",
+	"authors": [
+		"MakeGyver"
+	],
+	"contact": {
+		"homepage": "https://www.make-gyver.com/",
+		"sources": "https://github.com/Make-Gyver/"
+	},
+	"license": "MIT",
+	"icon": "assets/thirstyhero/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.makegyver.thirstyhero.ThirstyHero"
+		],
+		"fabric-datagen": [
+			"com.makegyver.thirstyhero.ThirstyHeroDataGenerator"
+		],
+		"client": [
+			"com.makegyver.thirstyhero.ThirstyHeroClient"
+		]
+	},
+	"mixins": [
+		"thirstyhero.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
